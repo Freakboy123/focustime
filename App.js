@@ -30,6 +30,7 @@ export default function App() {
   }
 
  const saveFocusHistory = async () => {
+   console.log("GitHub")
     try {
       await AsyncStorage.setItem('focusHistory', JSON.stringify(focusHistory));
     } catch (e) {
